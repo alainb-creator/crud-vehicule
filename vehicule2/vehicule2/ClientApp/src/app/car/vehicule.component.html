@@ -1,0 +1,23 @@
+<h1 id="tableLabel">vehicule</h1>
+
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="vehicules">
+  <thead>
+    <tr>
+      <th>Marque</th>
+      <th>Modele</th>
+      <th>Immatriculation</th>
+      <th>Kilometrage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let vehicule of vehicules">
+      <td>{{ vehicule.Marque }}</td>
+      <td>{{ vehicule.Modele }}</td>
+      <td>{{ vehicule.Immatriculation }}</td>
+      <td>{{ vehicule.Kilometrage }}</td>
+    </tr>
+  </tbody>
+</table>
