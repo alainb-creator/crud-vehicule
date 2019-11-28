@@ -10,6 +10,7 @@
       <th>Modele</th>
       <th>Immatriculation</th>
       <th>Kilometrage</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
@@ -17,10 +18,14 @@
       <td>{{ vehicule.Marque }}</td>
       <td>{{ vehicule.Modele }}</td>
       <td>{{ vehicule.Immatriculation }}</td>
-      <td>{{ vehicule.Kilometrage }}</td>
-     
-        <button type="button" class="btn btn-primary mr-1" (click)="VehiculeEdit(e.Id)">Edit</button>
-        <button type="button" class="btn btn-danger mr-1" (click)="Deletevehicule(e.Id)">Delete</button>
+      <td>{{ vehicule.kilometrage }}</td>
+     <td>
+       <div class="btn-group">
+         <button type="button" class="btn btn-primary mr-1" (click)="VehiculeEdit(e.Id)">Edit</button>
+         <button type="button" class="btn btn-danger mr-1" (click)="Deletevehicule(e.Id)">Delete</button>
+
+       </div>
+     </td>
  
     </tr>
   </tbody>
