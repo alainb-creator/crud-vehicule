@@ -18,6 +18,11 @@
       <td>{{ vehicule.Modele }}</td>
       <td>{{ vehicule.Immatriculation }}</td>
       <td>{{ vehicule.Kilometrage }}</td>
+     
+        <button type="button" class="btn btn-primary mr-1" (click)="VehiculeEdit(e.Id)">Edit</button>
+        <button type="button" class="btn btn-danger mr-1" (click)="Deletevehicule(e.Id)">Delete</button>
+ 
     </tr>
   </tbody>
 </table>
+
